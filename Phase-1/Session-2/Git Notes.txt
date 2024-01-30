@@ -1,0 +1,42 @@
+*********************************************************************************************
+GIT INSTALLATION
+*********************************************************************************************
+link: https://git-scm.com/downloads
+
+
+STEP:1 create folder in your local system> paste the items/files that you want to upload to github in it
+
+STEP:2 open terminal or cmd
+
+STEP:3 CREATE NEW REPOSITORY IN GITHUB (PUBLIC)
+
+STEP:4 cmd> 
+1. initialize new repository
+> git init
+
+2. set up the branch
+> git branch -M main
+
+3. set the remote origin
+> git remote add origin your_origin_path
+
+4. add the files
+> git add .
+
+5. commit changes in the repository
+> git commit -m "your message"
+
+6. upload the files
+> git push -u origin main
+---------------------------------
+
+then again if you want to upload something
+
+1. add the files
+> git add .
+
+2. commit changes in the repository
+> git commit -m "your message"
+
+3. upload the files
+> git push -u origin main
