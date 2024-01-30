@@ -40,3 +40,20 @@ then again if you want to upload something
 
 3. upload the files
 > git push -u origin main
+
+____________________________________________________________________
+1. check the selected branch
+
+> git branch 
+
+2. Create Branches in git
+> git branch dev1nikunj
+> git branch dev2nikunj
+
+3. check all the branches
+> git branch --list
+
+4. 
+
+
+
