@@ -1,0 +1,73 @@
+*********************************************************************************************
+GIT INSTALLATION
+*********************************************************************************************
+link: https://git-scm.com/downloads
+
+
+STEP:1 create folder in your local system> paste the items/files that you want to upload to github in it
+
+STEP:2 open terminal or cmd
+
+STEP:3 CREATE NEW REPOSITORY IN GITHUB (PUBLIC)
+
+
+STEP:4 OPEN YOUR LAB> TERMINAL> git auth login> github> HTTPS>open using browser> enter OTP> authorise github
+
+STEP:5 create folder on Desktop> add some files to the folder
+STEP:6 FROM TERMINAL MOVE TO THAT FOLDER USING >cd Desktop>cd foldername
+STEP:7 create github repository
+STEP:8 goto > terminal>
+> git init
+> git add .
+> git commit -m "First Commit"
+> git branch -M main
+> git push -u origin main
+
+STEP:9 setup global username and email
+
+> git config --global user.name <your_github_username>
+
+> git config --global user.email <your_github_email>
+
+>git push -u origin main
+
+> Enter username
+> enter password
+
+but if password is not working we can use access tokens
+
+>github>settings>developer settings>tokens>generate tokens> give name and use repository> give all permissions and generate tokens> save the token somewhere
+
+> goto> terminal>
+>git push -u origin main
+> Enter username
+> enter password: paste accesstoken here
+ 
+
+then again if you want to upload something
+
+1. add the files
+> git add .
+
+2. commit changes in the repository
+> git commit -m "your message"
+
+3. upload the files
+> git push -u origin main
+
+____________________________________________________________________
+1. check the selected branch
+
+> git branch 
+
+2. Create Branches in git
+> git branch dev1nikunj
+> git branch dev2nikunj
+
+3. check all the branches
+> git branch --list
+
+4. 
+
+
+
