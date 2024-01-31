@@ -55,19 +55,43 @@ then again if you want to upload something
 3. upload the files
 > git push -u origin main
 
-____________________________________________________________________
-1. check the selected branch
+***********************************************************************************************************
+BRANCHING IN GIT
+***********************************************************************************************************
+- BRANCHES PLAYS AN INPORTANT ROLE DURING VERSIONING
+- SUPPOSE ONE VERSION IS DEPLOYED AND UPLOADED TO THE GIT HUB
+- NOW WE ALL ARE WORKING ON SECOND VERSION FOR THAT WE WILL NOT CREATE NEW REPOSITORY BUT WE WILL CREATE NEW BRANCH IN THE SAME REPOSITORY
 
+TO CHECK WHICH BRANCH WE ARE WORKING ON?
+-----------------------------------------
 > git branch 
 
-2. Create Branches in git
-> git branch dev1nikunj
-> git branch dev2nikunj
+output: *main
 
-3. check all the branches
+ 
+TO CREATE NEW BRANCH IN THE REPOSITORY
+-----------------------------------------
+> git branch <name_of_your_branch>
+
+eg: git branch dev1nikunj
+eg: git branch dev2nikunj
+
+TO CHECK LIST OF AVAILABLE BRANCHES
+----------------------------------------
 > git branch --list
 
-4. 
+TO SWITCH TO A BRANCH
+----------------------------------------
+> git checkout <name_of_your_branch>
+eg: git checkout dev1nikunj
 
 
+ADD NEW CODE TO THE NEW BRANCH
+------------------------------------
+> git add .
+> git commit -m "New Version on New Branch"
+> git push -u origin dev1nikunj
 
+
+now wait for sometime it will ask you for compare and pull
+> also you can check th the branches on github as well
