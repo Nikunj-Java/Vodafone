@@ -12,19 +12,29 @@
     <div id="bird">
         <h1>Animation Example</h1>
     </div>
+
+   
     <!--Goto>cdnj.com>search for swfobject>copy the script tag and paste here!-->
-    
-
-     
-
-    <object data="flash/bird.swf" width="500" height="300">
-        <param name="bird" value="bird.swf">
-        <p></p>
-    </object>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.min.js" 
     integrity="sha512-INjccm+ffMBD7roophHluNrqwX0TLzZSEUPX2omxJP78ho8HbymItbcdh3HvgznbxeBhwcuqd6BnkBvdXeb1pg=="
      crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+
+    <script>
+        //here we will add flash object
+        swfobject.embedSWF('flash/bird.swf');
+    </script>
+
+    <!--in january 2022, flashplayer is being deprticated and most of the browser will not support it -->
+
+
+    <p>
+        <object width="100" height="115" data="flash/bird.swf" type="application/x-shockwave-flash">
+            <param name="bird" value="bird.swf">
+        </object>
+    </p>
+
+     
     
 </body>
 </html>

@@ -1,0 +1,10 @@
+h2{
+    color: black;
+    background-color: orange;
+}
+b{
+    background-color: yellowgreen;
+    padding: 20px;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
