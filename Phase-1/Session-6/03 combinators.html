@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* All Paragraphs Appy CSS*/
+       /* div p{
+            background-color: yellow;
+        }*/
+
+        /*select only Direct Child No Grand Child and Grand Grand Child*/
+        /*div>p{
+            background-color: aqua;
+        }*/
+
+        /*Select only the first Sibling*/
+        /*div+p{
+            background-color: yellowgreen;
+        }*/
+        /*Select all siblings*/
+        div~p{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <p>Direct Child Div para 1</p>
+        <p>Direct Child Div para 2</p>
+
+            <section>
+                <p>Grand Child div para 3</p>
+                <p>Grand Child div para 4</p>
+
+                        <article>
+                            <p>Grand Grand Child div para 5</p>
+                        </article>
+
+
+            </section>
+    </div>
+    
+    <p>Siblings div 1 para</p>
+    <p>Siblings div 1 para</p>
+    <p>Siblings div 1 para</p>
+    
+</body>
+</html>
