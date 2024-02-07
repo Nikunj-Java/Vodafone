@@ -1,0 +1,117 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+.info-container{
+    background-color: #2b1e16;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+.test1{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: white;
+}
+.test1 img{
+    height: 200px;
+    width: auto;
+}
+.item1{
+    margin-top: 70px;
+    margin-left: 50px;
+
+}
+.banner {
+    height: auto;
+    max-width: 100%;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+.links {
+    float: right;
+    height: 15px;
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    line-height: 15px;
+}
+.signup {
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    margin-right: 50px;
+}
+.locationinput{
+    width: 70%;
+    height: 25px;
+    color: gray;
+    margin: 40px auto auto 0px;
+    padding: 10px;
+    font-size: 18px!important;
+    font-weight: 500;
+}
+.location{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 290px;
+    left: 400px;
+    padding: 13px;
+}
+button:hover{
+    background-color: lightgrey;
+}
+.findfood{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 2rem;
+    letter-spacing: 0;
+    color: #fff;
+    background-color: #fc8019;
+}
+.cities{
+    font-size: 15px;
+    color: #a9abb2;
+    margin: 30px 0 10px;
+    letter-spacing: -.2px;
+    text-transform: uppercase;
+}
+.citylist{
+    width: 570px;
+    list-style: none;
+    margin-top:20px ;
+    padding: 0;
+}
+.list{
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 8px;
+    color: #686b78;
+    line-height: 1.5;
+    letter-spacing: -.3px;
+    text-decoration: none;
+}
+.list:nth-child(even){
+    color: lightslategray;
+}
+
