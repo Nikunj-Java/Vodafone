@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div div{
+            width:30%;
+            height:150px;
+            background-color: chocolate;
+            margin: 10px;
+        }
+        .item2{
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: chartreuse;
+        }
+        .item3{
+            position: sticky;
+            top: 0;
+            background-color: goldenrod;
+        }
+        .item6{
+            position: fixed;
+            top: 10px;
+            right: 100px;
+            background-color: darkmagenta;
+            z-index: auto; /*for chrome it is 1.0 for edge it is 4.0 */
+        }
+        .item7{
+            position: fixed;
+            top: 0;
+            right: 100px;
+            background-color: rgb(207, 250, 15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8"></div>
+        <div class="item9"></div>
+
+    </div>
+    
+</body>
+</html>
