@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+        }
+        .purple{
+            background-color: pink;
+            color: yellow;
+        }
+        #green{
+            background-color: green;
+            color: yellow;
+        }
+        #yellow{
+            background-color: yellow;
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Specificity</h1>
+    <p>Specificity will decide which css will be applied first in the order</p>
+
+    <p>Spceficity of <b>inline</b> is 1000 </p>
+    <p>Spceficity of <b>id</b> is 100 </p>
+    <p>Spceficity of <b>class</b> is 10</p>
+    <p>Spceficity of <b>tag</b> is 1 </p>
+
+    <h2 class="purple">Heading</h2>
+    <h2 class="purple" id="green">Heading</h2>
+    <h2 class="purple" id="yellow" style="color: pink; background-color: purple;" >Heading</h2>
+    
+</body>
+</html>
