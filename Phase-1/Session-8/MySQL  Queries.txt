@@ -40,3 +40,47 @@
 -----------------------------------------------------------------
 > select * from table_name;
 eg: select * from students
+
+
+11. CREATE ANOTHER TABLE
+-----------------------------------------------------------------
+> create table product (pid INT PRIMARY KEY,name VARCHAR(20), brand VARCHAR(20), price DOUBLE,color VARCHAR(20),rating FLOAT);
+
+>show tables;
+
+>describe products;
+
+
+12. CREATE ANOTHER TABLE
+------------------------------------------------------------------
+> create table user(uid INT PRIMARY KEY, name VARCHAR(20),phone VARCHAR(20),email VARCHAR(256));
+
+
+13. ADD 2 MORE COLUMNS TO THE TABLE
+-------------------------------------------------------------------
+> alter table user add age INT,add weight FLOAT;
+
+
+14. CREATE ANOTHER TABLE
+-------------------------------------------------------------------
+> create table customer(uid INT PRIMARY KEY, name VARCHAR(20),phone VARCHAR(20),email VARCHAR(256));
+
+
+15. INSERT THE RECORD
+-------------------------------------------------------------------
+> insert into customer (uid,name,phone,email) values(1,'alex','9876543210','alex@gmail.com');
+> insert into customer (uid,name,phone,email) values(2,'jhon','9876543201','jhon@gmail.com');
+> insert into user (uid,name,phone,email) values(1,'NIKUNJ','7685432109','nikunj@gmail.com');
+
+16. FETCH THE RECORD
+-------------------------------------------------------------------
+> SELECT * FROM customer;
+
+17.INSERT MULTIPLE VALUES IN A TABLE
+-------------------------------------------------------------------
+> insert into user (uid,name,phone,email) values
+(2,'NIKUNJ','7685432109','nikunj@gmail.com'),
+(3,'jhon','1234567890','jhon@gmail.com'),
+(4,'peter','9871234560','peter@gmail.com'),
+(5,'andreas','9898989811','andreas@gmail.com'),
+(6,'samiha','9999888811','samiha@gmail.com');
