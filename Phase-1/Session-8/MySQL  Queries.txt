@@ -106,3 +106,28 @@ eg: select * from students
 21. DROP THE DATABASE
 -------------------------------------------------------------------
 > drop database vodafone;
+
+
+22. WHERE /SELECT CLAUSE
+--------------------------------------------------------------------
+> create table user(uid INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(20),phone VARCHAR(20),email VARCHAR(256),age INT default 26,City VARCHAR(256));
+
+> insert into user (name,phone,email,age,city) values
+('sam','+91 9876543210','sam@gmail.com',23,'Mumbai'),
+('siri','+91 9988776655','siri@gmail.com',28,'Calcutta'),
+('jhon','+91 8877665544','jhon@gmail.com',32,'indore'),
+('anil','+91 7766554433','anil@gmail.com',35,'Mumbai'),
+('jacob','+91 9977553311','jacob@gmail.com',40,'Mumbai'),
+('shakti','+91 6655443322','shakti@gmail.com',37,'Mumbai');
+
+> select * from user;
+> select name from user;
+> select phone from user;
+> select email from user;
+> select city from user;
+> select name,phone from user;
+> select name,phone from user where city='Mumbai';
+> select name,phone from user where city='Mumbai' and age>30;
+> select name,phone from user where city='Mumbai' and age<30;
+
+
