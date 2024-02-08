@@ -130,4 +130,44 @@ eg: select * from students
 > select name,phone from user where city='Mumbai' and age>30;
 > select name,phone from user where city='Mumbai' and age<30;
 
+23. SORTING DATA
+-----------------------------------------------------------------------
+> select * from user order by name;  (ascending)
+> select * from user order by name DESC; 
+> select * from user order by age;
+> select * from user order by name DESC;  
+> select * from user order by age,name DESC; 
+> select * from user order by age,name ASC;
+
+
+24. GROUP BY  and AGGREGATE CLUASE
+------------------------------------------------------------------------
+SYNTAX: count,min.max,sum,avg,
+
+> select count(uid),city from user group by city;
+
+
+AGGREGATE:
+----------
+> select count(*) as Record from user;
+> select min(age) from user;
+> select min(age)Younger ,max(age) Elder from user;
+
+Last Inserted ID:
+-----------------
+> select max(uid) from user;
+
+
+SUM OF AGE:
+------------------
+> select sum(age) from user;
+> select sum(age) from user where city='Mumbai';
+
+
+AVERAGE:
+-----------------
+> select avg(age) from user;
+> select avg(age) from user where city='Mumbai';
+> select avg(age) from user group by city;
+
 
