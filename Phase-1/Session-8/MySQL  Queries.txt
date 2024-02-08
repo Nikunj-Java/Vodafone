@@ -84,3 +84,17 @@ eg: select * from students
 (4,'peter','9871234560','peter@gmail.com'),
 (5,'andreas','9898989811','andreas@gmail.com'),
 (6,'samiha','9999888811','samiha@gmail.com');
+
+18. TRUNCATE TABLE
+-------------------------------------------------------------------
+> truncate table customer;
+
+19. DROP TABLE
+-------------------------------------------------------------------
+> drop table customer;
+
+20. UPDATE RECORD
+-------------------------------------------------------------------
+> select * from user;
+> update user set name='amin' where uid=2;
+> update user set phone='555566622' where uid=2;
