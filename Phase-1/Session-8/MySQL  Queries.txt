@@ -190,5 +190,7 @@ RANGE:
 > select * from user where age between 25 and 30;
 
 (another way)
-> select * from user where age in(25,30);
+---select * from user where age inbetween (25,30) age group
 > select * from user where age >=25 and age<=30;
+
+we can also use between
