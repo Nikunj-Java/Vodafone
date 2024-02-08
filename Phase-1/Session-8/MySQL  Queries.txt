@@ -98,3 +98,11 @@ eg: select * from students
 > select * from user;
 > update user set name='amin' where uid=2;
 > update user set phone='555566622' where uid=2;
+
+21. DELETE RECORD
+-------------------------------------------------------------------
+> delete from user where uid=1;
+
+21. DROP THE DATABASE
+-------------------------------------------------------------------
+> drop database vodafone;
