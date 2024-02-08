@@ -1,0 +1,42 @@
+1. CREATE USER
+--------------------------------------------------------
+> create user admin@localhsot indentified by "admin@123";
+
+2. TO SEE CREATED USER
+---------------------------------------------------------
+> select user, host from mysql.user;
+
+3. CRAETE NEW DATABASE
+---------------------------------------------------------
+> create database <name of database>;
+
+4. SHOW THE DATABASE 
+---------------------------------------------------------
+> show databases;
+
+5. CREATE TABLE
+----------------------------------------------------------
+> create table students(id INT PRIMARY KEY,fname VARCHAR(20),lname VARCHAR(20), email VARCHAR(20), password VARCHAR(30));
+
+6. USE DATABASE
+----------------------------------------------------------
+> use <name ofyour database>
+
+7. TO CHECK TABELS IN DATABASE
+----------------------------------------------------------
+> show tables;
+
+8. TO CHECK THE DESCRIPTION OF TABLE
+----------------------------------------------------------
+> describe table <name of your database>
+
+9. INSERT RECORDS
+---------------------------------------------------------
+> insert into students (id,fname,lname,email,password) values (1,'Soni','Nikunj','nikunj@gmail.com','Nikunj@123');
+> insert into students (id,fname,lname,email,password) values (2,'Soni','Sonam','sonam@gmail.com','Sonam@123');
+> insert into students (id,fname,lname) values (3,'Alex','Jhon');
+
+10. FETCH RECORDS
+-----------------------------------------------------------------
+> select * from table_name;
+eg: select * from students
