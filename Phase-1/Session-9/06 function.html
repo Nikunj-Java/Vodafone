@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Function Demo</h1>
+
+    <script>
+
+        //simple function
+        function test(){
+            console.log("Hello function Called");
+        }
+
+        test();
+
+        // parametrized function
+        function add(a,b){
+            var num1=a+b ;  //3+2=5
+            var num2=a-b;   //3-2=1
+            return num1*num2;  //5*1=5
+        }
+
+       let result=add(3,2);
+
+       console.log("Result:",result);
+
+
+       //function returning function
+       function multiply(a,b){
+            var result=a*b;
+            return function(){ console.log("result of FRF:",result)};
+       }
+       var funct=multiply(3,4);
+       funct();
+
+    </script>
+    
+</body>
+</html>
