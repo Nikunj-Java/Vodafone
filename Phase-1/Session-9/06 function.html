@@ -38,6 +38,28 @@
        var funct=multiply(3,4);
        funct();
 
+
+       //IIFE (Immediately Invoked Function Expression)
+       //syntax:()();
+
+       (function(){document.write("Welcome to IIFE")})();
+
+
+       //arrow function
+       //stntax:()=>
+
+       //normal arrow function
+       let print=()=> document.write("<br>Welcome to Arrow function");
+       print();
+
+     
+        //parametrised arrow function
+         let multi=(a,b)=>a*b;
+       document.write("<br>Arrow function Multiply: "+multi(3,5));
+
+       //iife with arrow function
+       (()=>console.log("IIFE With Arrow Function"))();
+
     </script>
     
 </body>
