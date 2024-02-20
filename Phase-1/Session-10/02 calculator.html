@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Calculator Program</h2>
+
+    <script>
+        var num1=prompt("Enter Number 1");
+        var num2=prompt("Enter Number 2");
+        var operator=prompt("Enter operator+,-,*,/,>,<");
+
+        var x= parseInt(num1);
+        var y= parseInt(num2);
+
+        document.write("Number 1 is: "+num1+"<br>");
+        document.write("Number 2 is: "+num2+"<br>");
+        document.write("Operator is: "+operator+"<br>");
+
+
+        function MyOperator(x,y){
+            if(operator=='+'){
+                return x+y;
+            }
+            else if(operator=='-'){
+                return x-y;
+            }
+
+            else if(operator=='*'){
+                return x*y;
+            }
+
+            else if(operator=='/'){
+                return x/y;
+            }
+            else if(operator=='<'){
+                return x<y;
+            }
+            else if(operator=='>'){
+                return x>y;
+            }
+
+
+
+            ///write a program for *,/,<,>
+        }
+
+        var result=MyOperator(x,y);
+        document.write("Result is : "+result);
+    </script>
+</body>
+</html>
