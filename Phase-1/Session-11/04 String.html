@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let name="Nikunj Soni";
+
+        let nameObj=new String(name);  ///string Object
+
+        console.log(name);
+        console.log(nameObj);
+
+
+        //comparison
+        document.write(`check just value: ${name==nameObj}<br>`);//true
+        document.write(`check just value: ${name===nameObj}<br>`);//false
+
+
+        let obj1=new String("Hello World");
+        let obj2=new String("Hello World");
+
+        document.write(`check just value: ${obj1==obj2}<br>`);
+        document.write(`check Objects: ${obj1===obj2}<br>`);
+    </script>
+    
+</body>
+</html>
