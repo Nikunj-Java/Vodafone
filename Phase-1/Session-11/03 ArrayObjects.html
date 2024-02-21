@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const products=[
+            {id:1,name:'pen',price:10,rating:4.5},
+            {id:2,name:'pencil',price:8,rating:5.0},
+            {id:3,name:'rubber',price:12,rating:4.9},
+            {id:4,name:'scale',price:20,rating:3.8},
+            {id:5,name:'sharpner',price:6,rating:4.8},
+            {id:6,name:'color',price:25,rating:4.9},
+            {id:7,name:'sketch pen',price:40,rating:5.0},
+            {id:8,name:'strensil',price:100,rating:4.4},
+            {id:9,name:'book',price:120,rating:5.0},
+            {id:10,name:'stamp',price:90,rating:5.0},
+
+        ]
+
+
+        for(let p of products){
+            for(let key in p){
+                console.log(key + " "+p[key]);
+            }
+
+            console.log("------------------------------------");
+        }
+    </script>
+    
+</body>
+</html>
