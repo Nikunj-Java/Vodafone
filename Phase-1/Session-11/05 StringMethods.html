@@ -33,6 +33,54 @@
         let slice2=name.slice(-9);
         console.log(`Sclice -9 : ${slice2}`);
 
+        //03 substring Method
+        let name1="Hello World";
+
+        let sub1=name1.substring(0,5);
+
+        console.log("Substring Between 0-5 :"+sub1);
+
+        let msg="Good Evening Everyone";
+
+        console.log("Old String:",msg);
+
+        let sub2=msg.substring(5,16);
+
+
+        console.log("Substring between 5-16: "+sub2);
+
+
+
+        //04 Replace a String
+        let newMsg=msg.replace("Evening","Morning");
+        console.log("String Replace: "+newMsg);
+
+        let data="Hello! User , Your details mentioned Below, User:1";
+
+        let newData=data.replaceAll("User","userId");
+        console.log(newData);
+
+        //05 check the word available in the string
+
+        let word="find me on sky VIBGYOR";
+        console.log(word);
+
+        console.log("String  includes :"+word.includes("VIBGYOR"));
+
+        //06 find index of occurance
+
+        let str_train="Running in a train on the track";
+
+        let index=str_train.indexOf("track");
+        console.log(index);
+
+        //07 check character at position
+
+        var my_str="Hello World";
+        console.log(my_str);
+        console.log("Char at index 2:",my_str.charAt(2));
+    
+
     </script>
     
 </body>
