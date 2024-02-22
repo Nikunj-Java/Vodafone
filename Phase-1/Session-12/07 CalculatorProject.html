@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Addition Program</h1>
+
+    First Number: <input id="firstInput"><br><br>
+    Second Number: <input id="secondInput"><br> 
+
+    <button onclick="add()">Find Sum</button><br><br>
+    <button onclick="sub()">Find Difference</button><br><br>
+    <button onclick="multiply()">Find Product</button><br><br>
+    <button onclick="divide()">Find Reminer</button><br><br>
+    
+    Result: <input id="result">
+
+
+    <script>
+        function add(){
+            var first,second;
+            first=Number(document.getElementById("firstInput").value);
+            second=Number(document.getElementById("secondInput").value);
+
+            document.getElementById("result").value=first+second;
+        }
+
+        //create for addition/multiplication and division
+    </script>
+</body>
+</html>
