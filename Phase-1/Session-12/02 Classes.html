@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JavaScript Classes</h1>
+
+    <p>JavaScript classes uses the keyword class to create a class</p>
+
+    <p>a classes always has a constructor</p>
+
+    <p>Syntax: class Class_Name{ constructor( ){ }}</p>
+    
+
+    <script>
+        class Student{
+
+            constructor(id,name){
+                this.id=id;
+                this.name=name;
+            }
+
+            display(){
+                console.log("Id: ",this.id);
+                console.log("Name: ",this.name);
+            }
+        }
+
+        //creating object of class
+        let s1=new Student(1,"Alex");
+        let s2=new Student(2,"Jhon");
+        let s3=new Student(3,"Nikunj");
+
+        //calling a class method
+        s1.display();
+        s2.display();
+        s3.display();
+    </script>
+</body>
+</html>
