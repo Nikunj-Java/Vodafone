@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        class Car{
+
+            constructor(brand){
+                this.carname=brand;
+            }
+            present(){
+                return 'i own '+ this.carname;
+            }
+        }
+
+        class Model extends Car{
+            constructor(brand,mod){
+                super(brand);
+                this.model=mod;
+            }
+
+            show(){
+                return this.present()+ ', My Model is '+this.model;
+            }
+        }
+
+        let myCar=new Model("SUZUKI XL6","ZETA-CNG");
+        console.log(myCar.show());
+    </script>
+    
+</body>
+</html>
