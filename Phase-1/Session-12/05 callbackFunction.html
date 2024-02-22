@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function greeting(name){
+            console.log("Welcome...!!! "+name);
+        }
+
+        function fullname(fname,lname,callback){
+            fullname=fname+ " "+lname;
+            console.log("Full Name is: "+fullname);
+            callback(fullname);
+
+        }
+
+        fullname("Nikunj","Soni",greeting);
+    </script>
+    
+</body>
+</html>
