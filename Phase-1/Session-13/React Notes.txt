@@ -1,0 +1,47 @@
+Installation of React.js
+----------------------------
+1. DOWNLOAD NODE JS
+-> link:https://nodejs.org/en/download
+
+2. CHECK THE VERSION OF NODE USING CMD
+-> Open cmd> node -v
+
+3. INSTALL REACT USING NODE
+-> npm install -g create-react-app
+
+
+---------------------------------------
+For Simplilearn's Lab Everything is alredy Installed
+
+just log in to the lab
+
+1. Create Folder in the The Lab's Desktop
+2. Right Click on the Folder > Open Terminal Here
+3. Create React App
+-> npx create-react-app firstapp
+4. move to the app folder
+-> cd firstapp
+5. start the app
+-> npm start
+
+
+
+React Boottstrap:
+https://react-bootstrap.netlify.app/docs/getting-started/introduction
+
+>npm install react-bootstrap bootstrap
+
+> goto>app.js file and add below line
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
+
+
+>now the react-bootstrap is installed
+
+
+
+use components from React-Bootstrap Here:'
+
+https://react-bootstrap.netlify.app/
