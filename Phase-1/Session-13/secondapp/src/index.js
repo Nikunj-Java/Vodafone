@@ -3,25 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Header';
-import Slider from './components/Slider';
-import Featured from './components/Featured';
-import Footer from './components/Footer';
-import UseCase1 from './components/JSXLearning/UseCase1';
-import UseCase2 from './components/JSXLearning/UseCase2';
+import Header from './component/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-     <App />
+    <App />
     <Header/>
-    <Slider/>
-    <Featured/>
-    <UseCase1/>
-    <UseCase2/>
-    <Footer/>
+
   </div>
-   
+  
+    
   
 );
 
