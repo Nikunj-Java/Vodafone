@@ -12,6 +12,13 @@ function UseStateCase2(){
             <button className="btn btn-warning" onClick={()=> setIsOn(!isOn)}>{isOn ? 'Turn OFF':'Turn ON'}</button>
 
             <p>The Button is {isOn ? 'on' :'off'}</p>
+
+            <button
+      className={`btn ${isOn ? 'btn-danger' : 'btn-success'}`}
+      onClick={() => setIsOn(!isOn)}
+    >
+      {isOn ? 'Turn OFF' : 'Turn ON'}
+    </button>
    
           
         </div>

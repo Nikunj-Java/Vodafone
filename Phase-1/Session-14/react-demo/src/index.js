@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import PropsCase from './conponent/PropsCase';
 import UseStateCase from './conponent/UseStateCase';
 import UseStateCase2 from './conponent/UseStateCase2';
+import UseStateCase3 from './conponent/UseStateCase3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
 
     <UseStateCase2/>
     
+    <UseStateCase3/>
     
   </div>
 
