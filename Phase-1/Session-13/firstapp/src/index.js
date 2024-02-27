@@ -9,6 +9,8 @@ import Featured from './components/Featured';
 import Footer from './components/Footer';
 import UseCase1 from './components/JSXLearning/UseCase1';
 import UseCase2 from './components/JSXLearning/UseCase2';
+import UseCase3 from './components/JSXLearning/UseCase3';
+import UseCase4 from './components/JSXLearning/UseCase4';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +21,8 @@ root.render(
     <Featured/>
     <UseCase1/>
     <UseCase2/>
+    <UseCase3/>
+    <UseCase4/>
     <Footer/>
   </div>
    
