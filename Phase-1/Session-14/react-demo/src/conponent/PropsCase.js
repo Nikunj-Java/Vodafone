@@ -1,4 +1,5 @@
 import React from "react";
+import PropsCase2 from "./PropCase2";
 
 function PropsCase(props){
 
@@ -8,6 +9,7 @@ function PropsCase(props){
         <div className="container">
             <h2>Hello!! {props.message}</h2>
             <h3>{myMsg}</h3>
+            <PropsCase2 message="Hello Child...!!!!" />
         </div>
     )
 }

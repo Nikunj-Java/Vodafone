@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PropsCase from './conponent/PropsCase';
+import UseStateCase from './conponent/UseStateCase';
+import UseStateCase2 from './conponent/UseStateCase2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <div>
     <App />
+
+    <UseStateCase/>
+
+    <UseStateCase2/>
+    
     
   </div>
 
