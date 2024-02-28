@@ -5,6 +5,10 @@ import Timer from './componenet/Timer';
 import RealTimeClock from './componenet/RealTimeClock';
 import Demo from './componenet/Demo';
 import UserCaseInputValidation from './componenet/UserCaseInputValidation';
+import SubmissionTimer from './componenet/SubmissionTimer';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 function App() {
   return (
@@ -15,6 +19,7 @@ function App() {
       <RealTimeClock/>
       <Demo/>
       <UserCaseInputValidation/>
+      <SubmissionTimer submissionDate="2024-02-29T23:59:59"/>
     </div>
   );
 }
