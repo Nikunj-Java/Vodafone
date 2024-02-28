@@ -3,6 +3,8 @@ import './App.css';
 import UseEffectDemo from './componenet/UseEffectDemo';
 import Timer from './componenet/Timer';
 import RealTimeClock from './componenet/RealTimeClock';
+import Demo from './componenet/Demo';
+import UserCaseInputValidation from './componenet/UserCaseInputValidation';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <UseEffectDemo/>
       <Timer/>
       <RealTimeClock/>
+      <Demo/>
+      <UserCaseInputValidation/>
     </div>
   );
 }
