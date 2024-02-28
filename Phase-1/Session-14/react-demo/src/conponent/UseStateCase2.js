@@ -1,26 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-function UseStateCase2(){
-
-
-    const [isOn,setIsOn]=useState(false);
+function UseStateCase2() {
 
 
-    return(
+    const [isOn, setIsOn] = useState(false);
+
+
+    return (
         <div className="container text-center">
 
-            <button className="btn btn-warning" onClick={()=> setIsOn(!isOn)}>{isOn ? 'Turn OFF':'Turn ON'}</button>
+            <button className="btn btn-warning" onClick={() => setIsOn(!isOn)}>{isOn ? 'Turn OFF' : 'Turn ON'}</button>
 
-            <p>The Button is {isOn ? 'on' :'off'}</p>
+            <p>The Button is {isOn ? 'on' : 'off'}</p>
 
             <button
-      className={`btn ${isOn ? 'btn-danger' : 'btn-success'}`}
-      onClick={() => setIsOn(!isOn)}
-    >
-      {isOn ? 'Turn OFF' : 'Turn ON'}
-    </button>
-   
-          
+                className={`btn ${isOn ? 'btn-danger' : 'btn-success'}`}
+                onClick={() => setIsOn(!isOn)}
+            >
+                {isOn ? 'Turn OFF' : 'Turn ON'}
+            </button>
+
+
         </div>
     );
 }
