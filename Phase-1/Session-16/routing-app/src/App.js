@@ -9,6 +9,7 @@ import Aboutus from './component/Aboutus';
 import Home from './component/Home';
 import Contactus from './component/Contactus';
 import UniversityList from './component/UniversityList';
+import UnList from './component/UnList';
  
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/about' element={<Aboutus/>}></Route>
             <Route path='/contact' element={<Contactus/>}></Route>
             <Route path='/list' element={<UniversityList/>}></Route>
+            <Route path='/unlist' element={<UnList/>}></Route>
            </Routes>
     </BrowserRouter>
   );

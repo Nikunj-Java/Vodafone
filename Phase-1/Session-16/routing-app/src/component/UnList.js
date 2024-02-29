@@ -4,17 +4,16 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 
-function UniversityList(){
+function UnList(){
 
     const [users,setUsers]=useState([]);
-    const [address,setAddress]=useState([]);
     const getData= async()=>{
 
         try {
             
             //backend data fetch: http://localhost:8080/api/auth/users/
             //task:http://universities.hipolabs.com/search?country=india
-            const resp=await axios.get('https://jsonplaceholder.typicode.com/users');
+            const resp=await axios.get('http://universities.hipolabs.com/search?country=india');
             console.log(resp.data);
             setUsers(resp.data);
             
@@ -35,20 +34,18 @@ function UniversityList(){
             <table className="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Id </th> <th>Name</th> <th>Username</th> <th>Email</th><th>Phone</th><th>Address</th>
+                        <th>Name</th> <th>WebPage</th> <th>Country</th> <th>Country Code</th><th>Domains</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         users.map((item)=>{
-                            return(<tr key={item.id}>
-                                <td>{item.id}</td>
+                            return(<tr key={item.country}>
                                 <td>{item.name}</td>
-                                <td>{item.username}</td>
-                                <td>{item.email}</td>
-                                <td>{item.phone}</td>
-                                <td>{item.address.city},{item.address.street},{item.address.zipcode}</td>
-                                 
+                                <td>{item.web_pages}</td>
+                                <td>{item.country}</td>
+                                <td>{item.alpha_two_code}</td>
+                                <td>{item.domains}</td>
                             </tr>)
                         })
                     }
@@ -57,4 +54,4 @@ function UniversityList(){
         </div>
     )
 }
-export default UniversityList;
+export default UnList;
