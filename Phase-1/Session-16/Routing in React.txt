@@ -1,0 +1,16 @@
+
+
+
+-when we want to make links based on the links we want to render the components we use Routing
+-by default it will load home component
+but what we want???
+-----------------------
+
+HOME-> CLICK HERE TO MOVE TO HOME COMPONENT
+ABOUT-> CLICK HERE TO MOVE TO ABOUT COMPONENT
+LOGIN-> CLICK HERE TO MOVE TO LOGIN COMPONENT
+
+
+----------------------------------
+To do this navigation we need react-router-dom,that we need to install additionally in react
+-> npm i react-router-dom
