@@ -16,6 +16,7 @@ function Navigation() {
           <Link className='nav-link' to="/about">about</Link>
             
           <Link className='nav-link' to="/contact">contact</Link>
+          <Link className='nav-link' to="/list">Universities</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,18 @@
+
+********************************************************************************************************
+A   X   i   O  S
+********************************************************************************************************
+
+-> Axios are used to fetch External Links Data to React Application
+-> Axios has greater functionality than AJAX
+
+How to Install?
+------------------
+-> npm i axios
+
+syntax:
+---------
+
+axios.get(your_request_url)
+     .then( data=> console.log(data.data) )
+     .catch( error=>console.log(error) );
