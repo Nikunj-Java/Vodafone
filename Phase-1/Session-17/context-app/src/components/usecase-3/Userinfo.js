@@ -23,9 +23,9 @@ function UserInfo() {
                 <>
                     <h3>Please Login Here</h3>
                     <input type="text" value={username} onChange={(e)=>setUsername(e.target.value)}
-                    placeholder="USerName" />
+                    placeholder="UserName" />
                     <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}
-                    placeholder="USerName" />
+                    placeholder="Password" />
                     <button onClick={loginUser}>Login</button>
                 </>
             )
