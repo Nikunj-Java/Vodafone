@@ -5,10 +5,10 @@ const reducer=(state,action)=>{
     switch (action.type) {
         case 'INCREMENT':
             return {count:state.count+1}
-            break;
+            
         case 'DECREMENT':
             return {count:state.count-1}
-            break;
+            
     
         default:
             return state;
