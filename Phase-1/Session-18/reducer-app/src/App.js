@@ -3,6 +3,7 @@ import './App.css';
 import Counter from './component/Counter';
 import AgeCounter from './component/AgeCounter';
 import SimpleForm from './component/SimpleForm';
+import Whether from './component/Whether';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Counter/>
       <AgeCounter/>
       <SimpleForm/>
+      <Whether/>
     </div>
   );
 }
