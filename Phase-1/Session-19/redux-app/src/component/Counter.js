@@ -1,19 +1,17 @@
-
-
 import {useDispatch, useSelector} from 'react-redux';
 
 function Counter(){
 
-    const mycount=useSelector(state=>state.count);
+    const mycount=useSelector(state=>state.counter.count);
     const dispath=useDispatch();
 
     return(
-        <div>
+        <div className='container bg-warning'>
 
-            <p>count: {mycount}</p>
+            <h1>count: {mycount}</h1>
 
-            <button  onClick={()=>dispath({type:"INCREMENT"})}>INCREMENT</button>
-            <button  onClick={()=>dispath({type:"DECREMENT"})}>DECREMENT</button>
+            <button  className='btn btn-primary' onClick={()=>dispath({type:"INCREMENT"})}>INCREMENT</button>
+            <button  className='btn btn-danger' onClick={()=>dispath({type:"DECREMENT"})}>DECREMENT</button>
         </div>
     )
 }
