@@ -16,11 +16,11 @@ const MovieApp=()=>{
         setLoading(true);
         setError(null);
 
-        const API_KEY=process.env.IMDB_API;
+        const API_KEY=process.env.REACT_APP_API_KEY;
 
         try {
             
-            const response=await axios.get(`https://www.omdbapi.com/?apikey=[yourKey]&s=${searchTerm}`);
+            const response=await axios.get(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`);
             if(response.data.Response === "True"){
                 //console.log(response.data);
                 setMovies(response.data.Search);
