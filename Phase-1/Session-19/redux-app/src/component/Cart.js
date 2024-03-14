@@ -25,13 +25,13 @@ export const Cart=()=>{
 
             <ul>
                 {items.map(item=>{
-                    return(<li key={item.id}>{item.name} <button onClick={()=>{handleRemoveItem(item.id)}}>Remove Item</button></li>)
+                    return(<li key={item.id}>{item.name} <button className="btn btn-danger" onClick={()=>{handleRemoveItem(item.id)}}>Remove Item</button></li>)
                 })}
             </ul>
 
             <div>
                 <input type="text" value={newItem} onChange={e=>setNewItem(e.target.value)} placeholder="Enter Name of Item"/>
-                <button onClick={handleAddItem}>Add item</button>
+                <button className="btn btn-success" onClick={handleAddItem}>Add item</button>
             </div>
         </div>
     )
